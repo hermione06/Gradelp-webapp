@@ -39,7 +39,7 @@ git clone https://github.com/your-username/Gradelp-webapp.git
 ### Build and Run the Application
 ### Navigate to the project folder:
 ```bash
-cd average-calculator-web-app
+cd Gradelp-webapp
 ```
 ### Build the project using Gradle:
 ```bash
