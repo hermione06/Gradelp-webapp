@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Average Calculator</h1>
+        <form id="gradesForm">
+            <div id="coursesContainer">
+                <div class="course">
+                    <h3>Mathematics 1</h3>
+                    <div class="subject">
+                        <label for="math1-notebook">Notebook:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="math1-notebook" name="math1-notebook" placeholder="Enter grade">
+                    </div>
+                    <div class="subject">
+                        <label for="math1-first-written">First written exam:</label>
+                        <input type="number"  step ="0.01" min = "0" max = "20" id="math1-first-written" name="math1-first-written" placeholder="Enter grade">
+                    </div>
+                    <div class="subject">
+                        <label for="math1-second-written">Second written exam:</label>
+                        <input type="number"  step ="0.01" min = "0" max = "20" id="math1-second-written" name="math1-second-written" placeholder="Enter grade">
+                    </div>
+                </div>
+
+                <div class="course">
+                    <h3>English or French</h3>
+                    <div class="subject">
+                        <label for="english-written-production">Written production:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="english-written-production" name="english-written-production" placeholder="Enter grade">
+                    </div>
+                    <div class="subject">
+                        <label for="english-oral-evaluation">Oral evaluation:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="english-oral-evaluation" name="english-oral-evaluation" placeholder="Enter grade">
+                    </div>
+                    <div class="subject">
+                        <label for="english-written-exam">Written exam:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="english-written-exam" name="english-written-exam" placeholder="Enter grade">
+                    </div>
+                </div>
+
+                <div class="course">
+                    <h3>Physics 1</h3>
+                    <div class="subject">
+                        <label for="physics-fluid-mechanics">Fluid mechanics:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="physics-fluid-mechanics" name="physics-fluid-mechanics" placeholder="Enter grade">
+                    </div>
+                    <div class="subject">
+                        <label for="physics-thermodynamics">Thermodynamics 1:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="physics-thermodynamics" name="physics-thermodynamics" placeholder="Enter grade">
+                    </div>
+                    <div class="subject">
+                        <label for="physics-point-mechanics">Point mechanics:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="physics-point-mechanics" name="physics-point-mechanics" placeholder="Enter grade">
+                    </div>
+                </div>
+
+                <div class="course">
+                    <h3>Chemistry</h3>
+                    <div class="subject">
+                        <label for="chemistry-first-written">First written exam:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="chemistry-first-written" name="chemistry-first-written" placeholder="Enter grade">
+                    </div>
+                    <div class="subject">
+                        <label for="chemistry-second-written">Second written exam:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="chemistry-second-written" name="chemistry-second-written" placeholder="Enter grade">
+                    </div>
+                    <div class="subject">
+                        <label for="chemistry-practical-work">Evaluated Practical work:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="chemistry-practical-work" name="chemistry-practical-work" placeholder="Enter grade">
+                    </div>
+                    <div class="subject">
+                        <label for="chemistry-reports">Report:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="chemistry-reports" name="chemistry-reports" placeholder="Enter grade">
+                    </div>
+                    <div class="subject">
+                        <label for="chemistry-practical-behaviour">Practical work Behaviour:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="chemistry-practical-behaviour" name="chemistry-practical-behaviour" placeholder="Enter grade">
+                    </div>
+                </div>
+
+                <div class="course">
+                    <h3>Front-end Web Programming</h3>
+                    <div class="subject">
+                        <label for="front-end-participation">Participation/Practical Work:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="front-end-participation" name="front-end-participation" placeholder="Enter grade">
+                    </div>
+                    <div class="subject">
+                        <label for="front-end-project">Project work:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="front-end-project" name="front-end-project" placeholder="Enter grade">
+                    </div>
+                    <div class="subject">
+                        <label for="front-end-written">Written exam:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="front-end-written" name="front-end-written" placeholder="Enter grade">
+                    </div>
+                </div>
+
+                <div class="course">
+                    <h3>Data Structures and Algorithms 1</h3>
+                    <div class="subject">
+                        <label for="dsa-practical">Practical work/project:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="dsa-practical" name="dsa-practical" placeholder="Enter grade">
+                    </div>
+                    <div class="subject">
+                        <label for="dsa-written">Written exam:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="dsa-written" name="dsa-written" placeholder="Enter grade">
+                    </div>
+                </div>
+
+                <div class="course">
+                    <h3>Computer Science for Physics and Chemistry</h3>
+                    <div class="subject">
+                        <label for="cs-practical">Practical work:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="cs-practical" name="cs-practical" placeholder="Enter grade">
+                    </div>
+                    <div class="subject">
+                        <label for="cs-first-written">First Written exam:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="cs-first-written" name="cs-first-written" placeholder="Enter grade">
+                    </div>
+                    <div class="subject">
+                        <label for="cs-second-written">Second Written exam:</label>
+                        <input type="number" step ="0.01" min = "0" max = "20" id="cs-second-written" name="cs-second-written" placeholder="Enter grade">
+                    </div>
+                </div>
+
+            </div>
+            <button type="submit">Calculate Averages</button>
+        </form>
+
+        <div id="result">
+            <p>Overall Average: <span id="overallAverage"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
