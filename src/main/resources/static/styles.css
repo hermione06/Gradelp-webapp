@@ -1,47 +1,43 @@
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Body styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #f3e5f5); 
     color: #333;
     padding: 20px;
 }
 
-/* Container to center content */
 .container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
-/* Header */
 h1 {
     text-align: center;
-    color: #4CAF50;
+    color: #4a69bb;
     margin-bottom: 30px;
+    font-size: 2em;
 }
 
-/* Course and Subject Styling */
 .course {
     margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 15px;
+    border: 1px solid #d0d8e8;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #f7f9fc;
 }
 
 .course h3 {
-    color: #4CAF50;
+    color: #4a69bb;
     margin-bottom: 15px;
+    font-size: 1.2em;
 }
 
 .subject {
@@ -57,50 +53,77 @@ label {
 
 input[type="number"] {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 12px;
+    border: 1px solid #d0d8e8;
     border-radius: 4px;
     font-size: 1em;
     color: #333;
+    background-color: #f7f9fc;
 }
 
 input[type="number"]:focus {
     outline: none;
-    border-color: #4CAF50;
+    border-color: #4a69bb;
+    background-color: #e6f0ff;
 }
+
 input:invalid {
-    border: 2px dashed red;
-  }
-  
-  input:valid {
-    border: 2px solid black;
-  }
+    border: 2px dashed #e74c3c;
+}
+
+input:valid {
+    border: 2px solid #2980b9;
+}
 
 button {
     width: 100%;
-    padding: 12px;
-    background-color: #4CAF50;
+    padding: 14px;
+    background-color: #5c6bc0;
     color: white;
     border: none;
     border-radius: 4px;
     font-size: 1.2em;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #4a69bb;
+    transform: scale(1.05);  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Result Section */
+button:active {
+    background-color: #3e54a4;  
+    transform: scale(1);  
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 105, 187, 0.5); 
+}
+
 #result {
     margin-top: 30px;
     font-size: 1.2em;
     font-weight: bold;
     text-align: center;
+    color: #333;
 }
 
 #overallAverage {
-    color: #4CAF50;
+    color: #4a69bb;
     font-size: 1.5em;
     font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    button {
+        font-size: 1em;
+        padding: 12px;
+    }
 }
