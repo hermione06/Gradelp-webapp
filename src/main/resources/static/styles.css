@@ -5,10 +5,26 @@
 }
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #e0f7fa, #f3e5f5); 
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #50a3ba, #8fd3f4); 
+    background-size: 300% 300%; /* For smooth animated effect */
+    animation: gradientAnimation 8s ease infinite; /* Smooth infinite animation */
     color: #333;
     padding: 20px;
 }
+
+/* Keyframes for Animated Gradient */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 .container {
     max-width: 800px;
